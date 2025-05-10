@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Legend Barber Shop - Red Deer's premier barber shop offering precision haircuts, beard trims, and luxury shaves">
+    <title>Legend Barber Shop - Red Deer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <img src="legend-logo.png" alt="Legend Barber Shop" class="loading-logo">
+        <h1 class="loading-title">LEGEND</h1>
+        <div class="loading-spinner"></div>
+        <div class="loading-progress">
+            <div class="progress-bar"></div>
+        </div>
+        <p class="loading-text">Loading Experience</p>
+    </div>
+
+    <!-- Decorative Barber Poles -->
+    <div class="barber-pole left">
+        
+    </div>
+    <div class="barber-pole right">
+        
+    </div>
+
+    <!-- Header with Navigation -->
+    <header>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <img src="legend-logo.png" alt="Legend Barber Shop" class="header-logo">
+            <h1 class="header-title">LEGEND<br><span>BARBER SHOP</span></h1>
+            <p class="subtitle">CRAFTING LEGENDARY STYLES SINCE 2015</p>
+            <div class="header-buttons">
+                <a href="#booking" class="header-btn primary">Book Appointment</a>
+                <a href="#services" class="header-btn secondary">Our Services</a>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <a href="#" class="nav-logo">
+                    <img src="legend-logo.png" alt="Legend Barber Shop Logo" class="nav-logo-img">
+                </a>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li style="--i: 1"><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li style="--i: 2"><a href="#services"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                    <li style="--i: 3"><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li style="--i: 5"><a href="#contact"><i class="fas fa-map-marker-alt"></i> Contact</a></li>
+                    <li style="--i: 6"><a href="#booking"><i class="fas fa-calendar-check"></i> Booking</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="fade-in">
+        <div class="container">
+            <div class="section-decorator left"></div>
+            <div class="section-decorator right"></div>
+            <h2 class="section-title">About <span>Us</span></h2>
+            <p>Welcome to Legend Barber Shop, Red Deer's premier destination for men's grooming. We specialize in precision haircuts, beard trims, and luxury shaves. Our vintage-inspired shop combines old-school craftsmanship with modern style in a welcoming, masculine atmosphere.</p>
+            <div class="signature">
+                <img src="pic/photo_3_2025-05-10_13-57-00.jpg" alt="Signature" class="signature-img">
+                <p>Erick Master Barber</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">Our <span>Services</span></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Haircuts</h3>
+                    <p>Precision cuts for all styles and hair types</p>
+                    <span class="price">$$$</span>
+                    <div class="service-hover">
+                        <p>Includes consultation, shampoo, and styling</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brush"></i>
+                    </div>
+                    <h3>Beard Trim</h3>
+                    <p>Expert shaping and detailing</p>
+                    <span class="price">$$</span>
+                    <div class="service-hover">
+                        <p>Hot towel treatment included</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hot-tub"></i>
+                    </div>
+                    <h3>Hot Towel Shave</h3>
+                    <p>Traditional straight razor experience</p>
+                    <span class="price">$$$</span>
+                    <div class="service-hover">
+                        <p>With pre-shave oil and post-shave balm</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Fade Styles</h3>
+                    <p>Skin fades, tapers and designs</p>
+                    <span class="price">$$$$</span>
+                    <div class="service-hover">
+                        <p>Free touch-ups within 7 days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Our <span>Work</span></h2>
+            <p class="section-subtitle">See our latest haircuts and styles</p>
+            
+            <div class="gallery-grid">
+                <!-- Classic Cut -->
+                <div class="gallery-item">
+                    <img src="pic/classic.jpg" alt="Classic Cut" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Classic Cut</h3>
+                        <p>Traditional barbering at its finest</p>
+                    </div>
+                </div>
+                
+                <!-- Fade -->
+                <div class="gallery-item">
+                    <img src="pic/fade.jpg" alt="Fade" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Fade</h3>
+                        <p>Seamless transition from short to long</p>
+                    </div>
+                </div>
+                
+                <!-- Beard Trim -->
+                <div class="gallery-item">
+                    <img src="pic/beard_trim.jpg" alt="Beard Trim" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Beard Trim</h3>
+                        <p>Professional beard shaping and maintenance</p>
+                    </div>
+                </div>
+                
+                <!-- Hot Towel Shave -->
+                <div class="gallery-item">
+                    <img src="pic/cover.jpg" alt="Hot Towel Shave" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Hot Towel Shave</h3>
+                        <p>Traditional straight razor shave</p>
+                    </div>
+                </div>
+                
+                <!-- Hair Coloring -->
+                <div class="gallery-item">
+                    <img src="pic/hair.webp" alt="Hair Coloring" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Hair Coloring</h3>
+                        <p>Professional hair coloring services</p>
+                    </div>
+                </div>
+                
+                <!-- Kids Cut -->
+                <div class="gallery-item">
+                    <img src="pic/kids.jpg" alt="Kids Cut" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Kids Cut</h3>
+                        <p>Specialized cuts for young gentlemen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="fade-in">
+        <div class="booking-wrapper">
+            <div class="booking-header">
+                <h2 class="section-title">Book Your <span>Appointment</span></h2>
+                <p class="section-subtitle">Experience legendary grooming services</p>
+            </div>
+            
+            <div class="booking-container">
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Full Name
+                            </label>
+                            <input type="text" id="name" name="name" required 
+                                placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i> Phone Number
+                            </label>
+                            <input type="tel" id="phone" name="phone" 
+                                placeholder="(123) 456-7890" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Email
+                            </label>
+                            <input type="email" id="email" name="email" 
+                                placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">
+                                <i class="fas fa-cut"></i> Service
+                            </label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="Haircut">Haircut</option>
+                                <option value="Beard Trim">Beard Trim</option>
+                                <option value="Hot Towel Shave">Hot Towel Shave</option>
+                                <option value="Fade Style">Fade Style</option>
+                                <option value="Hair & Beard">Hair & Beard Combo</option>
+                                <option value="Kids Cut">Kids Cut (12 & under)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">
+                                <i class="fas fa-calendar"></i> Preferred Date
+                            </label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">
+                                <i class="fas fa-clock"></i> Preferred Time
+                            </label>
+                            <select id="time" name="time" required disabled>
+                                <option value="">Select Time</option>
+                            </select>
+                            <div id="timeStatus" class="time-status"></div>
+                        </div>
+                    </div>
+
+                    <div id="errorMessage" class="error-message"></div>
+                    <div id="loadingSpinner" class="loading-spinner" style="display:none"></div>
+                    <button type="submit" class="btn-submit" id="submitButton">
+                        <i class="fas fa-calendar-check"></i>
+                        Book Appointment
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Confirmation Modal -->
+    <div class="booking-modal" id="bookingModal">
+        <div class="booking-modal-content">
+            <div class="booking-modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2 class="thank-you-title">Thank You!</h2>
+            <h3 class="booking-modal-title">Booking Confirmed!</h3>
+            <p class="booking-modal-message">We appreciate your trust in Legend Barber Shop.<br>
+            A confirmation email has been sent to your inbox.<br>
+            Please arrive 5 minutes before your appointment.</p>
+            <div class="booking-details">
+                <div class="booking-detail-item">
+                    <i class="fas fa-calendar"></i>
+                    <span id="bookingDate">Date: </span>
+                </div>
+                <div class="booking-detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span id="bookingTime">Time: </span>
+                </div>
+                <div class="booking-detail-item">
+                    <i class="fas fa-cut"></i>
+                    <span id="bookingService">Service: </span>
+                </div>
+            </div>
+            <button class="close-modal-btn" onclick="closeBookingModal()">
+                Got it! <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <h2><span>Visit Us</span></h2>
+        <p class="section-subtitle">We'd love to see you</p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>5428 43 Street, Red Deer, AB</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:4033072993">(403) 307-2993</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:erickmasterbarber@outlook.com">erickmasterbarber@outlook.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Hours</h3>
+                        <p>Mon-Sat: 9AM - 7PM<br>Sun: 10AM - 4PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2441.944068612983!2d-113.8250922!3d52.262560699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537455eef134219d%3A0x3e21eb421580af10!2sRed%20deer%20Legend%20barbershop!5e0!3m2!1sen!2sca!4v1742783024291!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Legend Barber Shop Location"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Legend Barber Shop</h3>
+                <p>Red Deer's Premier Barber Shop</p>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <p><i class="fas fa-map-marker-alt"></i> 5428 43 Street, Red Deer, AB</p>
+                <p><i class="fas fa-phone"></i> (403) 307-2993</p>
+                <p><i class="fas fa-envelope"></i> erickmasterbarber@outlook.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Legend Barber Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    
+    <!-- Loading Screen Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Cache the loading screen element
+            const loadingScreen = document.querySelector('.loading-screen');
+            
+            // Ensure all content is loaded (images, etc.)
+            window.addEventListener('load', function() {
+                // Add a small delay for visual effect
+                setTimeout(() => {
+                    // Add the fade-out class
+                    loadingScreen.classList.add('fade-out');
+                    
+                    // Enable scrolling on body
+                    document.body.style.overflow = 'auto';
+                    
+                    // Remove the loading screen after animation
+                    setTimeout(() => {
+                        loadingScreen.style.display = 'none';
+                    }, 500);
+                }, 2000); // 2 second delay
+            });
+            
+            // Disable scrolling while loading
+            document.body.style.overflow = 'hidden';
+        });
+    </script>
+
+    <script>
+        // Save scroll position before unload
+        window.addEventListener('beforeunload', function() {
+            sessionStorage.setItem('scrollPosition', window.scrollY);
+        });
+
+        // Restore scroll position after loading screen is gone
+        document.addEventListener('DOMContentLoaded', function() {
+            const loadingScreen = document.querySelector('.loading-screen');
+            window.addEventListener('load', function() {
+                setTimeout(() => {
+                    // ... your existing loading screen fade-out code ...
+                    // Restore scroll position
+                    const scrollY = sessionStorage.getItem('scrollPosition');
+                    if (scrollY !== null) {
+                        window.scrollTo(0, parseInt(scrollY, 10));
+                    }
+                }, 2000); // match your loading screen delay
+            });
+        });
+    </script>
+
+    <script>
+        bookingForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            // ...
+        });
+    </script>
+
+</body>
+</html>
