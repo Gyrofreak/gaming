@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nuclear Gaming - Sign Up</title>
+</head>
+<body>
+    <div class="radar"></div>
+    <div class="container">
+        <div class="login-box">
+            <div class="radiation-symbol">☢</div>
+            <h1>Create Account</h1>
+            <p class="subtitle">Join the nuclear gaming community</p>
+            
+            <div id="errorMessage" class="error-message"></div>
+            
+            <form id="signupForm" onsubmit="return validateForm(event)">
+                <div class="input-group">
+                    <input type="text" id="username" name="username" required>
+                    <label for="username">Gamer Username</label>
+                </div>
+                
+                <div class="input-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">Password</label>
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <label for="confirmPassword">Confirm Password</label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+                
+                <button type="submit" class="login-button">Create Account</button>
+            </form>
+            
+            <p class="footer">Already have an account? <a href="index.html">Login</a></p>
+        </div>
+    </div>
+
+    <script src="js/signup.js"></script>
+</body>
+</html> 
